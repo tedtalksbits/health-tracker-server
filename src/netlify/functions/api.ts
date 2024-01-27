@@ -10,6 +10,6 @@ router.get('/hello', (req, res) => {
   res.json({ hello: 'world' });
 });
 
-api.use('/.netlify/functions/api', router);
+api.use('/api/', router);
 
 export const handler = serverless(api);
